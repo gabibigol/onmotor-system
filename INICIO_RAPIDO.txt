@@ -1,0 +1,140 @@
+═══════════════════════════════════════════════════════════════
+  🚀 SISTEMA ONMOTOR - INÍCIO RÁPIDO
+═══════════════════════════════════════════════════════════════
+
+Este é o sistema OnMotor COMPLETO, corrigido e pronto para deploy!
+
+───────────────────────────────────────────────────────────────
+  📦 O QUE VOCÊ TEM
+───────────────────────────────────────────────────────────────
+
+✅ Backend Node.js + Express (CORRIGIDO)
+✅ Frontend React + Material UI (COMPLETO)
+✅ 9 Módulos: Gerência, Serviços, Vendas, Clientes, Estoque,
+   Fornecedores, RH, Financeiro, Fiscal
+✅ Autenticação JWT + bcrypt
+✅ Controle de 3 dispositivos por usuário
+✅ Script SQL de inicialização
+✅ Documentação completa
+
+───────────────────────────────────────────────────────────────
+  🎯 PRÓXIMOS PASSOS (30 minutos)
+───────────────────────────────────────────────────────────────
+
+1️⃣  CRIAR REPOSITÓRIO NO GITHUB
+    - Acesse: https://github.com/new
+    - Nome: onmotor-system
+    - Criar repositório
+
+2️⃣  FAZER PUSH DO CÓDIGO
+    cd onmotor-system-novo
+    git init
+    git add .
+    git commit -m "Initial commit"
+    git remote add origin https://github.com/SEU_USUARIO/onmotor-system.git
+    git push -u origin main
+
+3️⃣  CRIAR BANCO NO RENDER
+    - Acesse: https://dashboard.render.com
+    - New + → PostgreSQL
+    - Name: onmotor-db
+    - Copiar Internal Database URL
+
+4️⃣  EXECUTAR SQL
+    - Conectar via psql
+    - Colar conteúdo de: database/init.sql
+
+5️⃣  DEPLOY BACKEND
+    - New + → Web Service
+    - Root Directory: backend
+    - Adicionar 6 variáveis de ambiente
+
+6️⃣  DEPLOY FRONTEND
+    - New + → Web Service
+    - Root Directory: frontend
+    - Adicionar 1 variável de ambiente
+
+───────────────────────────────────────────────────────────────
+  📚 DOCUMENTAÇÃO
+───────────────────────────────────────────────────────────────
+
+📖 README.md          → Visão geral do sistema
+📖 DEPLOY_GUIDE.md    → Guia passo a passo COMPLETO
+📖 database/init.sql  → Script SQL para o banco
+
+───────────────────────────────────────────────────────────────
+  🔧 ARQUIVOS CORRIGIDOS
+───────────────────────────────────────────────────────────────
+
+✅ backend/src/config/database.js
+   → Configurado para PostgreSQL do Render com SSL
+
+✅ backend/src/server.js
+   → Testa conexão com banco antes de iniciar
+
+✅ backend/src/controllers/authController.js
+   → Logs detalhados para debug do login
+
+───────────────────────────────────────────────────────────────
+  🎯 CREDENCIAIS PADRÃO
+───────────────────────────────────────────────────────────────
+
+Email: admin@onmotor.com
+Senha: admin123
+Perfil: Administrador
+
+───────────────────────────────────────────────────────────────
+  📂 ESTRUTURA DO PROJETO
+───────────────────────────────────────────────────────────────
+
+onmotor-system-novo/
+├── backend/              # API Node.js
+│   ├── src/
+│   │   ├── config/       # database.js (CORRIGIDO)
+│   │   ├── controllers/  # authController.js (CORRIGIDO)
+│   │   ├── middlewares/  # auth, deviceLimiter
+│   │   ├── models/       # Modelos Sequelize
+│   │   ├── routes/       # Rotas da API
+│   │   ├── services/     # deviceService
+│   │   └── server.js     # Servidor (CORRIGIDO)
+│   ├── package.json
+│   └── .env.example      # Variáveis de ambiente
+│
+├── frontend/             # App React
+│   ├── src/
+│   │   ├── components/   # Componentes
+│   │   ├── pages/        # 9 módulos completos
+│   │   ├── App.js
+│   │   └── index.js
+│   ├── package.json
+│   └── .env.example      # Variáveis de ambiente
+│
+├── database/
+│   └── init.sql          # Script SQL completo
+│
+├── README.md             # Documentação principal
+├── DEPLOY_GUIDE.md       # Guia de deploy
+├── INICIO_RAPIDO.txt     # Este arquivo
+└── .gitignore
+
+───────────────────────────────────────────────────────────────
+  ✅ RESULTADO FINAL
+───────────────────────────────────────────────────────────────
+
+Após seguir o DEPLOY_GUIDE.md, você terá:
+
+✅ Sistema OnMotor 100% funcional
+✅ Hospedado no Render (gratuito)
+✅ Login funcionando perfeitamente
+✅ 9 módulos completos acessíveis
+✅ Pronto para uso em produção
+
+───────────────────────────────────────────────────────────────
+  🚀 COMECE AGORA!
+───────────────────────────────────────────────────────────────
+
+Abra o arquivo: DEPLOY_GUIDE.md
+
+Siga cada passo e em 30 minutos seu sistema estará no ar!
+
+═══════════════════════════════════════════════════════════════
